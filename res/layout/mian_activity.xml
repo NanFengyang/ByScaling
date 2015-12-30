@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/page_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:clipChildren="false"
+    android:gravity="center_horizontal"
+    android:layerType="software"
+    android:orientation="vertical" >
+
+    <com.syscaling.byscaling.CustomViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="#454545"
+       
+        android:clipChildren="false" >
+    </com.syscaling.byscaling.CustomViewPager>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewpager"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="86dp"
+        android:text="切换" />
+
+</RelativeLayout>
